@@ -7,7 +7,7 @@ function validateForm() {
   let passwordLength = passwordId.length;
   //name
   let nameId = document.forms["myForm"]["name"].value;
-  var letters = /^[A-Za-z]+$/;
+  var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
   //country
   let countryId = document.getElementById("country").value;
   //zip
@@ -36,7 +36,7 @@ function validateForm() {
     return false;
   }
   //name
-  if (!nameId.match(letters) || nameId == "") {
+  if (!regName.test(nameId) || nameId == "") {
     document.getElementById("name-alert").innerHTML =
       "[ Required and alphabates only. ]";
     return false;
