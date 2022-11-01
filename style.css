@@ -49,6 +49,12 @@ input[type="submit"]:hover {
 }
 
 #user-id-alert,
-#password-alert{
+#password-alert,
+#name-alert,
+#country-alert,
+#zip-alert,
+#email-alert,
+#language-alert,
+#sex-alert {
   color: red;
 }
